@@ -32,20 +32,20 @@ const createBlog = [
             title:req.body.title,
             category:req.body.category,
             publishedDate:req.body.publishedDate,
-            thumbnail: req.files.thumbnail ?{
-                data:req.files.thumbnail[0].buffer,
-                contentType:req.files.thumbnail[0].mimetype
-            } : null,
+            // thumbnail: req.files.thumbnail ?{
+            //     data:req.files.thumbnail[0].buffer,
+            //     contentType:req.files.thumbnail[0].mimetype
+            // } : null,
             description:req.body.description,
             content:req.body.content,
             ytvidlink:req.body.ytvidlink,
             ytdescription:req.body.ytdescription,
             authorname:req.body.authorname,
             authorrole:req.body.authorrole,
-            authorimg: req.files.authorimg ? {
-                data:req.files.authorimg[0].buffer,
-                contentType:req.files.authorimg[0].mimetype,
-            } : null,
+            // authorimg: req.files.authorimg ? {
+            //     data:req.files.authorimg[0].buffer,
+            //     contentType:req.files.authorimg[0].mimetype,
+            // } : null,
          });
 
          const Post = await blogPost.save();
