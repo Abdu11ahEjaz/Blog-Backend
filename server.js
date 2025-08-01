@@ -3,6 +3,7 @@ import connDB from "./config/db.js";
 import dotenv from 'dotenv';
 import postRoutes from './routes/postRoutes.js'
 import cors from 'cors';
+// import serverless from 'serverless-http';
 
 dotenv.config();
 
@@ -32,13 +33,25 @@ app.use('/',(req,res) =>{
   res.send('Backend is Running ')
 } )
  
+// export const handler = serverless(app);
+
 const PORT = process.env.PORT || 3000 ; 
 app.listen(PORT,'0.0.0.0' ,() =>{
 console.log(`App is running on ${PORT}`); 
 }); 
         
+
+  
+
+
+  
+
+
+
  
- 
+
+
+
 
 // import express from "express";
 // import connDB from "./config/db.js";
