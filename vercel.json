@@ -13,15 +13,15 @@
     },
     {
       "src": "/favicon.ico",
-      "dest": "/public/favicon.ico"
+      "dest": "/favicon.ico"
     },
     {
       "src": "/meta.json",
-      "dest": "/public/meta.json"
+      "dest": "/meta.json"
     },
     {
       "src": "/",
-      "dest": "/public/index.html"
+      "dest": "/index.html"
     }
   ]
 }
