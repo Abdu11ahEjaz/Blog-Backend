@@ -12,13 +12,13 @@ connDB();
 
 app.use(express.json());
 
-app.use(cors());
+// app.use(cors());
 
-// app.use(cors({
-//   origin: 'http://192.168.1.15:5173', // Replace with your Frontend PC’s IP
-//   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-//   allowedHeaders: ['Content-Type', 'Authorization']
-// }));
+app.use(cors({
+  origin: 'http://192.168.1.16:5173', // Replace with your Frontend PC’s IP
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
 
 app.use('/api/posts',postRoutes);
 
