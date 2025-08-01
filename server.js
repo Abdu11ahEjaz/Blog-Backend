@@ -36,7 +36,7 @@ app.use('/',(req,res) =>{
     console.log('Server not running');
   }
 } );
- 
+  
 // export const handler = serverless(app);
  
 const PORT = process.env.PORT || 3000 ; 
@@ -44,14 +44,6 @@ app.listen(PORT,'0.0.0.0' ,() =>{
 console.log(`App is running on ${PORT}`); 
 });  
         
-
-  
-
-
-  
-
-
-
  
 
 
